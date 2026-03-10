@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Timeline</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f5f5;
+padding:40px;
+}
+
+h1{
+text-align:center;
+}
+
+.timeline{
+border-left:4px solid #667eea;
+margin:40px;
+padding-left:30px;
+}
+
+.event{
+background:white;
+padding:20px;
+margin-bottom:30px;
+border-radius:10px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.event:hover{
+transform:scale(1.03);
+}
+
+.date{
+color:#667eea;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>My Life Timeline</h1>
+
+<div class="timeline">
+
+<div class="event" onclick="go('story1.html')">
+<div class="date">2024</div>
+<h3>Trip to Sabah</h3>
+<p>My unforgettable travel experience</p>
+</div>
+
+<div class="event" onclick="go('story2.html')">
+<div class="date">2025</div>
+<h3>University Life</h3>
+<p>Memories during study</p>
+</div>
+
+</div>
+
+<script>
+
+function go(page){
+window.location=page
+}
+
+</script>
+
+</body>
+</html>
